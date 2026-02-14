@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+
+<!-- Welcome Screen -->
+<div class="card active" id="screen-0">
+  <img src="assets/welcome.gif" class="question-gif">
+  <h1>Hey Cutie ❤️</h1>
+  <p>I wanna ask you something…</p>
+  <button onclick="nextScreen()">Start</button>
+</div>
+
+
+  <!-- Question 1 -->
+  <div class="card" id="screen-1">
+    <img src="assets/q1.gif" class="question-gif">
+    <h2>You Look Deserving</h2>
+    <p>future you’d like to explore?</p>
+    <div class="btn-group">
+      <button onclick="nextScreen()">🌍World Traveling</button>
+      <button onclick="nextScreen()">🏡Building a home</button>
+      <button onclick="nextScreen()">🎉Exploring yourself</button>
+      <button onclick="nextScreen()">💖Being Immature</button>
+    </div>
+    <button class="back-btn" onclick="prevScreen()">← Back</button>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="card" id="screen-2">
+    <img src="assets/q2.gif" class="question-gif">
+    <h2>You're Sweet</h2>
+    <p>Will you choose all of it… with me?</p>
+    <div class="btn-group">
+      <button onclick="nextScreen()">Yes 💬</button>
+      <button onclick="nextScreen()">Ofc Yes 📸</button>
+    </div>
+    <button class="back-btn" onclick="prevScreen()">← Back</button>
+  </div>
+
+  <!-- Task -->
+  <div class="card" id="screen-3">
+    <img src="assets/promise.gif" class="question-gif">
+    <h2>One Little Promise</h2>
+    <p>Check this if you promise we’ll always stay together.</p>
+    <label class="checkbox">
+      <input type="checkbox" id="promiseCheck">
+      I promise 💖
+    </label>
+    <div class="btn-group">
+      <button onclick="checkPromise()">Continue</button>
+    </div>
+    <button class="back-btn" onclick="prevScreen()">← Back</button>
+  </div>
+
+<!-- Gift Box Reveal Page -->
+<div class="card" id="screen-4">
+  <div class="gift-container">
+    <h2 class="surprise-text">Click on surprise 🎁</h2>
+    <img src="assets/giftbox.png" class="giftbox" onclick="nextScreen()">
+    <button class="back-btn" onclick="prevScreen()">← Back</button>
+  </div>
+</div>
+
+
+  <!-- Final Love Letter -->
+  <div class="card" id="screen-5">
+    <h1>I Love You 💌</h1>
+    <p class="letter">
+      From the moment you came into my life, everything felt different warmer, brighter, and more meaningful.
+      Every  stupid thing you do makes me love you more and more.Every smile of yours, every word you say, every little thing you do make me feel lucky to have you.Everything about you matters to me more than you know.
+      <br><br>
+      yesterday you asked me whom I choose my family or you, but I choose my family in which you are my wife ,i promise honesty, effort, loyalty, and a heart that chooses you every single day.
+      <br><br>
+      You are not just an idiot I love… you are my future wife, I choose you honey.
+so,miss Alexa reyanica jasmine khalid will you be my wife forever?
+    </p>
+
+    <div class="gallery">
+      <img src="assets/img1.jpg">
+      <img src="assets/img2.jpg">
+      <img src="assets/img3.jpg">
+    </div>
+
+    <h2 class="final-text">I Am Forever Yours ❤️</h2>
+    <button class="back-btn" onclick="prevScreen()">← Back</button>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
